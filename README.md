@@ -127,8 +127,8 @@ char message[100];
 
 DHT dht(DHTPIN, DHTTYPE);
 
-#define WIFI_SSID "soghwns"//와이파이 이름
-#define WIFI_PASSWORD "gh314wns!"//와이파이 비밀번호
+#define WIFI_SSID ""//와이파이 이름
+#define WIFI_PASSWORD ""//와이파이 비밀번호
 
 #define BOT_TOKEN "8140194638:AAGOpEGxQ9Qf3nxU6sLhEFPsJLk23sPn7Jw"  //bot token
 #define CHAT_ID "5561347315"     //Chat ID
