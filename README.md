@@ -24,9 +24,10 @@
 
 링크만 가지고 있다면 해당 데이터를 볼 수 있는 권한이 생기기에 얼마나 편리한 시스템인가??
 
-<img width="233" height="217" src="https://github.com/user-attachments/assets/707f6d1c-c8a1-4749-aa0e-9714cc88e311" />
-<img width="291" height="173" src="https://github.com/user-attachments/assets/fff20d17-56bc-4617-9fa9-c47a5fcd135a" />
-
+<div align="center">
+ <img width="150"  src="https://github.com/user-attachments/assets/707f6d1c-c8a1-4749-aa0e-9714cc88e311" />
+ <img width="250"  src="https://github.com/user-attachments/assets/fff20d17-56bc-4617-9fa9-c47a5fcd135a" />
+</div>
 
 
 ## 소프트웨어 세팅
@@ -39,26 +40,35 @@ PLX-DAQ라는 프로그램으로 엑셀의 매크로 시스템을 이용하여 �
 
 ### PLX-DAQ 설치
 
-<img width="2559" height="1260" src="https://github.com/user-attachments/assets/4cf61fb3-c474-43af-a53b-b8237876826c" />
-< 사이트 주소 : https://forum.arduino.cc/t/plx-daq-version-2-now-with-64-bit-support-and-further-new-features/420628 >
-
+<div align="center">
+ <img width="800" src="https://github.com/user-attachments/assets/4cf61fb3-c474-43af-a53b-b8237876826c" />
+ 
+ < 사이트 주소 : https://forum.arduino.cc/t/plx-daq-version-2-now-with-64-bit-support-and-further-new-features/420628 >
+</div>
+  
 아두이노 포럼에서 직접 시스템을 제공하고 있음을 확인하여, 가장 최신 버전인 2.11로 선택하였다.
 
-<img width="2559" height="1257" src="https://github.com/user-attachments/assets/b165627d-cceb-4270-b43f-8433845c57a2" />
+<div align="center">
+ <img width="800" src="https://github.com/user-attachments/assets/b165627d-cceb-4270-b43f-8433845c57a2" />
+</div>
 
 버전을 선택하고 다시 내부사이트로 들어가서, 스크롤을 조금만 내리면 .zip 파일의 형태로 소프트웨어를 다운로르받을 수 있다.
 
 그 후 다운로드 된 파일의 압축을 풀어주면 네 개의 파일을 확인할 수 있는데, 이 중 확장자명이 .xlsm로 끝나는 파일을 "엑셀"로 연결 프로그램으로 설정하여 열어주면 소프트웨어 화면을 확인할 수 있다.
 
-<img width="1114" height="571" src="https://github.com/user-attachments/assets/6d52f26c-547a-4999-a930-dca2787f248e" />
+<div align="center">
+ <img width="800" src="https://github.com/user-attachments/assets/6d52f26c-547a-4999-a930-dca2787f248e" />
 
-<img width="845" height="595" alt="image" src="https://github.com/user-attachments/assets/c6503434-490b-4c8e-a63f-f4d05a07e489" />
-< 엑셀 내부에서의 모습 / PLX DAQ로 시작하는 새로운 팝업창을 볼 수 있다. >
-
+ <img width="800" src="https://github.com/user-attachments/assets/c6503434-490b-4c8e-a63f-f4d05a07e489" />
+ 
+ < 엑셀 내부에서의 모습 / PLX DAQ로 시작하는 새로운 팝업창을 볼 수 있다. >
+</div>
 
 팝업창에서 아두이노 시리얼 환경에 맞게 Port번호와 통신속도(Baud)를 적절히 설정한다. 참고로 필자는 포트번호를 "7", 통신속도는 "9600"으로 설정하였다. PLX-DAQ는 115200 속도는 통신이 잘 안된다고 하는데, 혹시 모르니(안정성의 문제) 필자도 해당 주의에 따르도록 하겠다.
 
-<img width="437" height="481" src="https://github.com/user-attachments/assets/7c95322a-7c61-433c-964a-08ca082fdcfd" />
+<div align="center">
+ <img width="400" src="https://github.com/user-attachments/assets/7c95322a-7c61-433c-964a-08ca082fdcfd" />
+</div>
 
 이대로 나중에 아두이노 회로를 PC와 연결하고, 통신이 시작된 상태에서 팝업창의 "Connect"를 누르면 자동으로 데이터를 저장할 수 있다.
 
@@ -212,15 +222,79 @@ void loop() {
 }
 ```
 
-## 실행 모습
+### 실행 모습
 
-각각의 열에 맞춰 자료를 반영하는 모습을 확인할 수 있었다. 
+<div align="center">
+ <img width="800" src="https://github.com/user-attachments/assets/cea07028-b852-40ba-a06a-cc0187a58c79" />
+
+ <img width="800" src="https://github.com/user-attachments/assets/3180c9a4-70f2-46d0-be52-5aefb4c3f156" />
+</div>
+
+각각의 열에 맞춰 자료를 반영하는 모습을 확인할 수 있었다. 특히 필자는 엑셀 파일의 용량 걱정을 우려하여 행의 개수가 30을 넘기지 않도록 설정하였는데, count 제한 수를 늘려 더 많은 데이터를 수집할 수 있도록 설정할 수 있다.
 
 
-## 원드라이브의 이용
+### 원드라이브의 이용
 
 엑셀은 사용자가 만일 원드라이브를 소유하고 있으면, 간단한 설정을 하여 파일을 클라우드 상으로 저장할 수 있도록 한다. 즉, 인터넷을 이용한 접근이 가능하므로 링크를 보유한 사용자들은 쉽게 자료를 열람할 수 있다는 것이다.
 
-다만, 원드라이브 자체는 그다지 소프트웨어 상으로 '가벼운 시스템'이 아니다. 한 번에 여러가지 일을 수행하기가
+순서는 
 
+ - 먼저 원드라이브에 해당 파일을 업로드(자동 저장 켜기)하고, 
 
+<div align="left">
+ <img width="450"  src="https://github.com/user-attachments/assets/8c5014e2-2547-4d16-929d-6366dc6daa1a" />
+</div>
+
+ - '공유' 버튼을 눌러 '링크 복사'한다면,
+
+<div align="left">
+ <img width="450" src="https://github.com/user-attachments/assets/dfc48084-8acf-4d2a-ae26-8ba6c5bc611f" />
+</div>
+
+ - 클립보드로 링크가 저장된다.
+
+<div align="left">
+ <img width="600" src="https://github.com/user-attachments/assets/0bd84ddc-0492-454c-86f0-34dceb8ac8f5" />
+</div>
+
+<태블릿(모바일, 안드로이드)>
+
+<div align="center">
+ <img width="800" src="https://github.com/user-attachments/assets/d0194d3f-7636-40c5-95b1-ed3a1dd02689" />
+</div>
+
+<웹 환경>
+
+<div align="center">
+ <img width="800" src="https://github.com/user-attachments/assets/5bc9412c-506d-4eea-9ca5-761aeadf6057" />
+</div>
+
+다행히 두 환경에서 자료 수집의 모습을 잘 보여주었다.
+
+하지만 원드라이브는 아직 모바일 친화적인지 않은 것인지, 태블릿 환경은 처음에는 잘 데이터를 표시해주었다가 나중에는 기능을 멈춰버리고, 휴대폰으로는 아예 데이터 수집조차도 어려운 모습을 보였다.
+
+그나마 대안은 모바일도 웹에서 데이터를 잘 받는 모습을 보여 원드라이브 매크로 엑셀 내용은 일단 '앱'이 아닌 '웹'으로 확인하는 방법이다.
+
+여기서 멈추지 않고, 엑셀의 자체기능인 그래프 표시도 이용해보자.
+
+< PC 엑셀 >
+
+<div align="center">
+ <img width="800" src="https://github.com/user-attachments/assets/942fdcae-a80d-47e7-b8c6-9fc54d9650da" />
+</div>
+
+< PC 웹 >
+
+<div align="center">
+ <img width="800" src="https://github.com/user-attachments/assets/d4eddb13-fdce-4078-8e91-57d9c44c4d01" />
+</div>
+
+< 태블릿 웹 >
+
+<div align="center">
+ <img width="800" src="https://github.com/user-attachments/assets/099400db-3126-4d6c-a338-c4a4db13369a" />
+</div>
+
+웹 환경에서 그래프까지 모두 잘 보여준다.
+
+설정을 잘 건드려, 링크로 초대받은 사용자는 내부 자료를 수정할 수 없도록 관리한다면 좋은 시각화 도구로 사용할 수 있다고 판단한다. 
