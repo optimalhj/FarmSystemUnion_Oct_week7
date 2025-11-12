@@ -280,13 +280,13 @@ void loop() {
 < PC 엑셀 >
 
 <div align="center">
- <img width="800" src="https://github.com/user-attachments/assets/942fdcae-a80d-47e7-b8c6-9fc54d9650da" />
+ <img width="800" src="https://github.com/user-attachments/assets/d4eddb13-fdce-4078-8e91-57d9c44c4d01" />
 </div>
 
 < PC 웹 >
 
 <div align="center">
- <img width="800" src="https://github.com/user-attachments/assets/d4eddb13-fdce-4078-8e91-57d9c44c4d01" />
+ <img width="800" src="https://github.com/user-attachments/assets/942fdcae-a80d-47e7-b8c6-9fc54d9650da" />
 </div>
 
 < 태블릿 웹 >
